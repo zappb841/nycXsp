@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYCxSP: Subway System</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <h1 class="display">NYC x SP: The Subway System</h1>
+            <h2 class="sub">A comparission between the subway system of two<br>
+                major cities: New York City (USA) & São Paulo (Brasil)</h2>
+        </div>
+
+        <div class="section1">
+            <h1>Extension x Demand</h1>
+            <div class="mini-charts">
+                <div class="mini-chart" id="1"><canvas id="miniChart0"></canvas></div>
+                <div class="mini-chart" id="2"><canvas id="miniChart1"></canvas></div>
+                <div class="mini-chart" id="3"><canvas id="miniChart2"></canvas></div>
+            </div>
+            <p class="subtitle"><br>São Paulo's subway system is 4 times smaller than NYC's, <br>while still having a close number of
+                passengers per day. </p>
+        </div>
+
+        <div class="section2">
+            <h1>Occupancy Map</h1>
+            <p class="subtitle">How many passengers are riding the subway per square meter?</p>
+            <div class="occupancy" id="occupancy"></div>
+            <p class="subtitle"><br>During peak hours, there are approxmatly 5 people per square meter<br> in New York City's subways,
+                while
+                in São Paulo that number goes up to 9. </p>
+        </div>
+
+        <div class="section3">
+            <h1>Subway Fare x Minimum Wage Over Time</h1>
+            <div class="chart-controls">
+                <div class="outer-pill">
+                    <div class="toggle-group" id="cityToggle">
+                        <button data-value="both" class="active">Both cities</button>
+                        <button data-value="sp">São Paulo</button>
+                        <button data-value="nyc">New York</button>
+                    </div>
+                </div>
+            </div>
+            <canvas id="fareChart"></canvas>
+            <p class="subtitle"><br>In São Paulo, a worker that earns the minumum wage needs to work <br>for 44 minutes to pay for a
+                subway ride. In New York, they need to work for 11 minutes.</p>
+        </div>
+
+        <script src="tarif.js"></script>
+        <script src="extension.js"></script>
+        <script src="occupancy.js"></script>
+    </div>
+</body>
+
+</html>

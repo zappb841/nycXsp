@@ -1,0 +1,155 @@
+body {
+    margin: 0px;
+    background-color: #FFF;
+}
+
+.page {
+    max-width: 1200px;
+    margin: -100px auto 0px;
+    padding-bottom: 200px;
+
+    background-image: url(images/bkg.jpg);
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.header {
+    margin-top: 100px;
+    padding-top: 45px;
+}
+
+.display {
+    font-size: 32px;
+}
+
+.sub {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 24px;    
+}
+.subtitle {
+    font-size: 14px;
+}
+
+.section1 {
+    width: 1000px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 24px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #d9d9de;
+    border-radius: 32px;
+}
+
+.mini-charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0px;
+    margin-left: -70px;
+}
+
+.mini-chart {
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.section2 {
+    margin-top: 70px;
+}
+
+.occupancy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 24px;
+}
+
+.occupancy-item {
+    margin: 0;
+    text-align: center;
+}
+
+.occupancy-square {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #d9d9de;
+    border-radius: 42px;
+    display: block;
+}
+
+.occupancy-item figcaption {
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.section3 {
+    width: 900px;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #d9d9de;
+    border-radius: 32px;
+    
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.chart-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.outer-pill {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 4px 4px;
+    border: 1px solid #d9d9de;
+    width: fit-content;
+    border-radius: 999px;
+    background-color: #FFF;
+    justify-content: center;
+}
+
+.toggle-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+}
+
+.toggle-group button {
+    font-weight: 400;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 999px;
+    background: #FFF;
+    color: #000;
+    font-size: 12px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.toggle-group button.active {
+    background: #FFF;
+    border: 1px solid #d9d9de;
+    color: #000;
+}
